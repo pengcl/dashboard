@@ -1,145 +1,156 @@
 .statistics-container {
-  padding: 16px;
+    padding: 16px;
 }
+.statistics-container a{
+  text-decoration: none;
+  color: #333;
+}
+.s-label {
+    height: 48px;
+    border-bottom: 1px solid #ededed;
+    line-height: 48px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
 .menu-item {
-  position: relative;
+    position: relative;
 }
 
 .menu-item .desc {
-  color: #333;
-  font-size: 12px;
-  line-height: 1;
+    color: #333;
+    font-size: 12px;
+    line-height: 1;
 }
 
 .setting-box {
-  background-color: #fff;
-  height: 64px;
-  box-sizing: border-box;
-  padding: 15px 15px 15px 60px;
-  position: relative;
-  display: block;
-  transition: all 0.5s;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
-  text-decoration: none;
-
+    background-color: #fff;
+    height: 64px;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 60px;
+    position: relative;
+    display: block;
+    transition: all 0.5s;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    text-decoration: none;
+    margin: 8px;
 }
 
-.setting-box .setting-box > .icons {
-  width: 36px;
-  height: 36px;
-  font-size: 18px;
-  background-color: #f4f5fa;
-  border-radius: 18px;
-  text-align: center;
-  line-height: 36px;
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+.setting-box > .icons {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    background-color: #f4f5fa;
+    border-radius: 18px;
+    text-align: center;
+    line-height: 36px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
-.setting-box .setting-box > .icons ion-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+.setting-box > .icons svg {
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-place {
-  color: #839bd2;
+.setting-box > .icons ion-icon.icon-place {
+    color: #839bd2;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-camera_fill {
-  color: #64c0cb;
+.setting-box > .icons ion-icon.icon-camera_fill {
+    color: #64c0cb;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-group {
-  color: #d6b993;
+.setting-box > .icons ion-icon.icon-group {
+    color: #d6b993;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-registration {
-  color: #84a8de;
+.setting-box > .icons ion-icon.icon-registration {
+    color: #84a8de;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-search {
-  color: #9683d4;
+.setting-box > .icons ion-icon.icon-search {
+    color: #9683d4;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-diary {
-  color: #8ac2ed;
+.setting-box > .icons ion-icon.icon-diary {
+    color: #8ac2ed;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-marge {
-  color: #90ccb6;
+.setting-box > .icons ion-icon.icon-marge {
+    color: #90ccb6;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-avatar {
-  color: #e58f9d;
+.setting-box > .icons ion-icon.icon-avatar {
+    color: #e58f9d;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-department {
-  color: #839bd2;
+.setting-box > .icons ion-icon.icon-department {
+    color: #839bd2;
 }
 
-.setting-box .setting-box > .icons ion-icon.icon-copy {
-  color: #d6b993;
+.setting-box > .icons ion-icon.icon-copy {
+    color: #d6b993;
 }
 
+.setting-box > .icons ion-icon
+.setting-box > .icons ion-icon
 .setting-box .setting-box > .icons ion-icon
-
-.setting-box .setting-box > .icons ion-icon
-
-.setting-box .setting-box > .icons ion-icon
-
 .setting-box .label {
-  color: #333;
-  line-height: 1;
-  margin-top: 0;
-  font-size: 20px;
+    color: #333;
+    line-height: 1;
+    margin-top: 0;
+    font-size: 20px;
 }
 
 .setting-box .desc {
-  color: #333;
-  font-size: 12px;
-  line-height: 1;
-  margin-top: 5px;
+    color: #333;
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 5px;
 }
 
 .setting-box .desc .icons {
-  font-size: 16px;
-  margin-left: 8px;
-  display: inline-block;
-  vertical-align: middle;
+    font-size: 16px;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .setting-box:hover > .icons {
-  animation-name: flipInX;
-  backface-visibility: visible;
+    animation-name: flipInX;
+    backface-visibility: visible;
 }
 
 .setting-box:hover > .label {
-  color: #006eff;
+    color: #006eff;
 }
 
 .setting-box .rate {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translate3d(0, -50%, 0);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
 }
 
 .setting-box .rate span {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .setting-box .rate span.rate-label {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .setting-box .rate span.rate-count {
-  font-size: 24px;
+    font-size: 24px;
 }
