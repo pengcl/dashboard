@@ -1,16 +1,69 @@
 .statistics-container {
     padding: 16px;
 }
-.statistics-container a{
-  text-decoration: none;
-  color: #333;
+
+.statistics-container a {
+    text-decoration: none;
+    color: #333;
 }
+
 .s-label {
     height: 48px;
     border-bottom: 1px solid #ededed;
     line-height: 48px;
     margin-bottom: 16px;
     margin-top: 16px;
+    position: relative;
+}
+
+.s-label > span.project-select {
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+}
+
+.s-label .project-container {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    z-index: 999;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    border-radius: 0 0 4px 4px;
+    display: none;
+}
+
+.s-label .project-container.hover {
+    display: block;
+}
+
+.s-label .project-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.s-label .project-container li {
+    margin: 0;
+    list-style: none;
+    padding: 0 15px;
+}
+
+.s-label .project-container li:hover {
+    background: #3171e0;
+    color: #fff;
+}
+
+.s-label > span.project-select svg {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: text-bottom;
+    width: 16px;
+    height: 16px;
+    fill: #999;
 }
 
 .menu-item {
